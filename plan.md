@@ -5,3 +5,7 @@ key: 863fb196
 
 REST Client
 https://blog.bitsrc.io/vs-codes-rest-client-plugin-is-all-you-need-to-make-api-calls-e9e95fcfd85a
+
+
+npm i gh-pages --save-dev
+script: "deploy": "gh-pages -d build"
