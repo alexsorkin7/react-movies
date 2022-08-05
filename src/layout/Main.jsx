@@ -12,7 +12,7 @@ export default class Main extends React.Component {
    fetch = (type = '') => {
       this.setState({loading:true})
       if(this.state.type !== 'All') type= `&type=${this.state.type}`
-      fetch(`http://www.omdbapi.com/?apikey=863fb196&s=${this.state.searchKey}${type}`)
+      fetch(`https://www.omdbapi.com/?apikey=863fb196&s=${this.state.searchKey}${type}`)
       .then(res=> res.json())
       .then(data=> this.setState({movies:data.Search,loading:false}))
    }
