@@ -1,0 +1,42 @@
+.movies {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.movie {
+   padding: 1rem;
+   max-width: 330px;
+}
+
+.movie>.poster>img {
+   max-width: 100%;
+}
+
+.movie>.title {
+   font-size: 1.5rem;
+}
+/* .movie>.year {
+
+} */
+
+.search-container {
+   display: flex;
+   justify-content: center;
+}
+.search-input {
+   padding: .5rem 1rem;
+   margin: .5rem;
+   width: 90%;
+   border: none;
+   border-bottom: solid 1px gray;
+}
+.search-input:focus {
+   border: none;
+   border-bottom: solid 2px slategray;
+   outline: none;
+}
+
+.radio-buttons-container {
+   display: flex;
+   justify-content: space-evenly;
+}
